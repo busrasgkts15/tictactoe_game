@@ -1,0 +1,30 @@
+<div class="container" style="margin-top: 3%;">
+  <div class="row">
+    <div class="col">
+      <h2 *ngIf="isShow" [ngClass]="{'Xgamer' : false}">OYUNU KAZANAN : {{winner}}</h2>
+      <div style="display: flex;justify-content: space-between;" class="img-container">
+        <img [ngClass]="{'Xgamer': isShowX}"  style="border: 1px hidden;border-radius: 50px;max-width: 60px;"
+          src="https://cdn-icons-png.flaticon.com/128/2566/2566458.png?filename=superhero_2566458.png&fd=1" alt="">
+        <div style="display: flex; width: 1110px;font-family: fantasy;margin-top: 14px;justify-content: space-between;" class="gamers">
+          <h5>X Gamers</h5>
+          <h5>O Gamers</h5>
+        </div>
+        <img [ngClass]="{'Xgamer': isShowO}" style="border: 1px hidden;border-radius: 50px;max-width: 60px;"
+          src="https://cdn-icons-png.flaticon.com/128/6740/6740968.png?filename=ninja_6740968.png&fd=1" alt="">
+
+      </div>
+      <h2 style="font-family: fantasy;">Sıradaki Oyuncu : {{nextGamer}}</h2>
+      <hr>
+      <button style="margin-bottom: 1rem;border-radius: 4px;font-size: large;background: transparent;" (click)="newGameAgain()">Yeni Oyun</button>
+  
+    </div>
+  </div>
+  <div class="square-container">
+    <div class="square" *ngFor="let item of gamesSquare let index=index">
+      <button class="btn btn-primary button" (click)="getXorO(index)">{{item}}</button>
+
+    </div>
+  </div>
+
+</div>
+<router-outlet></router-outlet>

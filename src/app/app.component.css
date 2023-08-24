@@ -1,0 +1,32 @@
+.Xgamer {
+    cursor: pointer;
+    color: #FDD835;
+    overflow: hidden;
+    background: #FDD835;
+    box-shadow: 0 0 5px #FDD835,
+        0 0 25px #FDD835,
+        0 0 50px #FDD835,
+        0 0 200px #FDD835;
+}
+
+.square-container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20rem;
+    margin-left: 20rem;
+}
+
+.square {
+    margin: 2px 2px;
+}
+
+.button {
+    width: 180px;
+    height: 180px;
+    font-size: 90px;
+    border: 1px solid white;
+    background-color: #f3ca17;
+}
+
