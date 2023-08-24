@@ -55,17 +55,11 @@ export class AppComponent {
       this.text = "X"
     }
     this.nextGamers(this.text)
-    this.winnerGame()
+    // this.winnerGame()
   }
 
   nextGamers(games: string) {
     this.nextGamer = games
-
-  }
-
-
-  winnerGame() {
-    
 
   }
 
